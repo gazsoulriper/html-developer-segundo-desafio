@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+html, body {
+    margin: 0;
+    scroll-behavior:smooth; /* Rola suavemente para a posição desejada */
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+    overflow-x: auto;
+}
+
+.menu {
+    width: 25%;
+    background-color: rgb(71, 219, 128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu img {
+    max-width: 100px;
+}
+
+.menu ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.menu li {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    padding: .5rem 0;
+}
+
+.main {
+    flex-flow: column;
+    width: 85%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 0 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content p {
+    width: 100%;
+}
+
+.content a {
+    color: black;
+    text-shadow: 0 0 black;
+}
+
+.content img {
+    float: right;
+   max-width: 250px;
+}
+
+.tabela {
+    text-align: center;
+    border: 1px solid #0a38418c;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(46, 187, 109);
+    min-height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer p {
+    padding: 0;
+    color: #fff;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.content a:hover {
+    color: #6371eb;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.email {
+    padding: .5rem;
+    text-align: center;
+}
+
+.email a {
+    color: black;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+fieldset {
+    padding: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+.contato {
+    text-align: center;
+}
+
+@media only screen and (min-width: 840px) {
+    /* Estilos específicos para telas maiores que 840 pixels de largura */
+.header {
+        width: 100%; /* Tamanho máximo relativo à largura do contêiner */
+        height: auto; /* Mantém a proporção original */
+        display: flex;
+        flex-direction: row;
+    }
+
+.footer {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer p {
+    float: left;
+    margin: 0;
+}
+.footer a {
+    float: right;
+    padding: 1rem;
+}
+}
+
+@media only screen and (max-width: 430px) {
+    /* Estilos específicos para telas menores que 430 pixels de largura */
+
+.header img {
+    display: flex;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 0 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
