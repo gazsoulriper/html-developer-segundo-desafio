@@ -3,6 +3,10 @@
     font-family: "Open Sans", sans-serif;
 }
 
+menu, footer {
+    font-size: 18;
+}    
+
 h1 {
     text-align: center;
 }
