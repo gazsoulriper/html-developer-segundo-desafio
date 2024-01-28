@@ -3,8 +3,8 @@
     font-family: "Open Sans", sans-serif;
 }
 
-menu, footer {
-    font-size: 18;
+menu, footer, a {
+    font-size: 20px;
 }    
 
 h1 {
